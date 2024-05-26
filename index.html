@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Employee</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <script src="js.js"></script>
+    <link rel="icon" href="favicon.png" sizes="32x32">
+
+    <!-- cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+    
+    <!-- cdn end -->
+  
+</head>
+  <body class="main">
+    <nav class="navbar navbar-light bg-light">
+     
+        <img src="assets/img/ve-logo.png" width="173" height="56" alt="">
+   
+    </nav>
+    <Section class="cardsection">
+      <div id="card" class="">
+         <Div class="carousaldiv">      
+          <Button id="dp-next" data-toggle="modal" data-target="#exampleModal">
+              Show Me!
+          </Button>
+          <Button id="dp-prev">
+            PREV
+          </Button>
+        </Div>
+        <div class="" style="width: 290px;height: 460px; margin: 40px auto;z-index: 99;">
+          <div id="slider">
+            <div class="dp-wrap">
+              <div id="dp-slider">
+          
+                <div class="dp_item" data-class="1" data-position="1">
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal">
+                      <img src="assets/img/Intro.png"/>
+                    </button>
+                  </div>
+                  <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal">
+                  </button>
+                </div>
+          
+                <div class="dp_item" data-class="2" data-position="2">
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal2">
+                      <img src="assets/img/Predict.png"/>
+                    </button>
+                  </div>
+                  <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal2">
+
+                  </button>
+                </div>
+          
+                <div class="dp_item" data-class="3" data-position="3">
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal3">
+                      <img src="assets/img/Real Time.png"/>
+                    </button>
+                    <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal3">
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="dp_item" data-class="4" data-position="4">
+  
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal4">
+                      <img src="assets/img/Safeguard.png"/>
+                    </button>
+                    <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal4">
+                    </button>
+                  </div>
+                </div>
+                <div class="dp_item" data-class="5" data-position="5">
+  
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal5">
+                      <img src="assets/img/Needs.png"/>
+                    </button>
+                    <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal5">
+                    </button>
+                  </div>
+                </div>
+                <div class="dp_item" data-class="6" data-position="6">
+  
+                  <div class="dp-img">
+                    <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal6">
+                      <img src="assets/img/Optimize.png"/>
+                    </button>
+                    <button type="button" class="btn p-0 showme" data-toggle="modal" data-target="#exampleModal6">
+                    </button>
+                  </div>
+                </div>
+              </div>
+          
+     
+          
+          
+          
+              <!-- <ul id="dp-dots">
+                <li data-class="1" class="active"></li>
+                <li data-class="2"></li>
+                <li data-class="3"></li>
+                <li data-class="4"></li>
+                <li data-class="5"></li>
+                <li data-class="6"></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Intro1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+   
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Predict1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+    
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Real Time1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Safeguard1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  
+        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Needs1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+   
+        <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Optimize1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+
+      </div>
+  
+      <div id="grid" class="hidden my-5">
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal10">
+          <img src="assets/img/Intro.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Intro1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal11">
+          <img src="assets/img/Predict.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Predict1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal12">
+          <img src="assets/img/Real Time.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Real Time1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal13">
+          <img src="assets/img/Safeguard.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel13" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Safeguard1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal14">
+          <img src="assets/img/Needs.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel14" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Needs1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModal15">
+          <img src="assets/img/Optimize.png"/>
+        </button>
+        <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel15" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="assets/img/Optimize1.png" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+  
+
+  <footer class="my-3">
+    <div id="btnContainer">
+      <button class="btn active cardview" onclick="toggleActive(this)"></button>
+      <button class="btn gridview" onclick="toggleActive(this)"></button> 
+    </div>
+  </footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+
+  jQuery(document).ready(function(){
+
+// Cache selectors for better performance
+var $slider = $("#dp-slider");
+var $dots = $("#dp-dots");
+var $card = $("#card");
+var $grid = $("#grid");
+
+// Function to detect active slide and update corresponding dot
+function detectActive() {
+    var getActive = $slider.find(".dp_item:first-child").data("class");
+    $dots.find("li").removeClass("active");
+    $dots.find("li[data-class="+ getActive +"]").addClass("active");
+}
+
+// Function to toggle between card and grid view
+function toggleView(view) {
+    if (view === "card") {
+        $card.show();
+        $grid.hide();
+    } else if (view === "grid") {
+        $card.hide();
+        $grid.show();
+    }
+}
+
+// Initial detection of active slide
+detectActive();
+
+// Next button click handler
+$("#dp-next").click(function(){
+    $slider.find(".dp_item:first-child").hide().appendTo($slider).fadeIn();
+    detectActive();
+});
+
+// Previous button click handler
+$("#dp-prev").click(function(){
+    $slider.find(".dp_item:last-child").hide().prependTo($slider).fadeIn();
+    detectActive();
+});
+
+// Dot click handler
+$dots.on("click", "li", function(){
+    $dots.find("li").removeClass("active");
+    $(this).addClass("active");
+    var getSlide = $(this).attr('data-class');
+    $slider.find(".dp_item[data-class=" + getSlide + "]").hide().prependTo($slider).fadeIn();
+    detectActive();
+});
+
+// Slider item click handler
+$slider.on("click", ".dp_item:not(:first-child)", function(){
+    var getSlide = $(this).attr('data-class');
+    $slider.find(".dp_item[data-class=" + getSlide + "]").hide().prependTo($slider).fadeIn();
+    detectActive();
+});
+});
+
+	  </script>
+
+  </body>
+</html>

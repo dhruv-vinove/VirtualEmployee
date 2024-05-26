@@ -1,0 +1,177 @@
+html{
+  height:auto;
+  min-height: 100%;
+}
+.navbar{
+  z-index: 9999;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.cardsection{
+height: 100%;
+}
+.carousaldiv{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+}
+.main{
+  /* display: flex; */
+  height: 100%;
+  /* flex-direction: column; */
+  background-color: #3874dc;
+  padding: 40px 64px;
+  position: relative;
+  min-height: 100vh;
+}
+.main .bg-light{
+  background-color: transparent !important;
+
+  justify-content: start;
+}
+footer{
+position: absolute;
+bottom: 0px;
+left: 0px;
+z-index: 999;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.btn{
+  outline: none !important;
+  border: none !important;
+  
+}
+.btn-check:checked+.btn:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible, .btn:first-child:active:focus-visible, :not(.btn-check)+.btn:active:focus-visible {
+  box-shadow: none !important;
+}
+.btn:focus{
+  outline: none !important;
+  border: none !important;
+  
+}
+#card img,#grid img{
+  max-width: 290px;
+  width: 100%;
+  max-height: 463px;
+  max-height: auto;
+}
+#card{
+margin: auto;
+max-width: 983px;
+display: flex;
+justify-content: space-between;
+gap: 57px 56px;
+}
+#grid{
+  margin: auto;
+  max-width: 983px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 57px 56px;
+  z-index: 9999;
+  }
+#btnContainer{
+  background: #000000;
+  width: 76px;
+  padding: 4px;
+  border-radius: 40px;
+  display: flex;
+  margin: auto;
+}
+#btnContainer .btn {
+  border: none;
+  outline: none;
+  padding: 0px;
+  cursor: pointer;
+  min-height: 34px !important;
+  min-width: 34px !important;
+  max-height: 34px !important;
+  max-width: 34px !important;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  color: white;
+}
+.cardview{
+  display: none;
+}
+#btnContainer .btn.cardview.active{
+  background: url(assets/icons/cardactive.png) !important;
+  background-size: 100%;
+}
+
+#btnContainer .btn.gridview{
+  background: url(assets/icons/grid.png) !important;
+  background-size: 100%;
+
+}
+
+#btnContainer .btn.cardview{
+  background: url(assets/icons/card.png) !important;
+  background-size: 100%;
+}
+
+#btnContainer .btn.gridview.active{
+  background: url(assets/icons/gridactive.png) !important;
+  background-size: 100%;
+
+}
+
+
+.modal-dialog{
+  height: fit-content  !important;
+}
+.modal-content{
+  height: 100%;
+  border-radius: 20px !important;
+}
+#grid .modal-body img{
+  max-height: 100%;
+  max-width: 100%;
+}
+#card .modal-body img{
+  max-height: 100%;
+  max-width: 100%;
+}
+button.btn-secondary{
+    height: 36px;
+    width:  36px;
+    position: absolute;
+    right: 20px;
+    background: none;
+    background: #E8E8ED;
+    color: #666668;
+    border-radius: 100%;
+  /* padding: 16px; */
+}
+
+@media(min-width:500px){
+  .modal-dialog{
+    max-width: 1600px !important;
+    min-width: 70% !important;
+  }
+}
+.modal-open .modal{
+  z-index: 9999 !important;
+}
+
+.dp_item button.showme{
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0px !important;
+  z-index: 99999999 !important;
+  right: -100%;
+}
