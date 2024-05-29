@@ -200,3 +200,49 @@ text-decoration: none;
 color: #fff;
 }
 h1 { margin: 150px auto 30px auto; text-align: center; }
+
+.layerleftbtn{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: 999999 !important;
+  opacity: 0px !important;
+}
+.layerleftbtn:hover{
+  background: none !important;
+}
+
+/* slider hover css */
+
+
+.dp_item,
+.dp_item * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.dp_item {
+  width: 100%;
+  padding: 15px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.dp_item:hover .dp-img {
+  transform: translatex(-50px);
+}
+
+
+.left-hover .dp_item:nth-child(1) .dp-img img {
+  transform: translate(-70px, 0px)  rotateX(30deg) rotateY(50deg)  scale(1);
+
+}
+
+.right-hover .dp_item:nth-child(1) .dp-img img {
+  transform: translate(170px, 0px) rotateX(-30deg) rotateY(-50deg) scale(1);
+}
