@@ -79,8 +79,9 @@ function dpMouseMoveHandler(event) {
 
 document.addEventListener('mousemove', function(event) {
   var dpItems = document.querySelectorAll('#dp-slider');
+  let screenWidth = window.innerWidth;
   // Check if the cursor is on the left side of the screen
-  if (event.pageX < window.innerWidth / 2) {
+  if (event.pageX < (screenWidth * 0.3)) {
     // Apply the CSS styles to .dp-img img when the cursor is on the left side
     dpItems.forEach(function(item) {
       item.classList.add('left-hover');
@@ -95,8 +96,9 @@ document.addEventListener('mousemove', function(event) {
 
 document.addEventListener('mousemove', function(event) {
   var dpItems = document.querySelectorAll('#dp-slider');
+  let screenWidth = window.innerWidth;  
   // Check if the cursor is on the right side of the screen
-  if (event.pageX > window.innerWidth / 2) {
+  if (event.pageX > (screenWidth * 0.6)) {
     // Apply the CSS styles to .dp-img img when the cursor is on the right side
     dpItems.forEach(function(item) {
       item.classList.add('right-hover');

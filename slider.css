@@ -246,3 +246,13 @@ h1 { margin: 150px auto 30px auto; text-align: center; }
 .right-hover .dp_item:nth-child(1) .dp-img img {
   transform: translate(170px, 0px) rotateX(-30deg) rotateY(-50deg) scale(1);
 }
+
+.left-hover .dp_item:nth-child(n+3) .dp-img img {
+  transform: translate(0px, 0px)  rotateX(0deg) rotateY(0deg)  scale(1) !important;
+
+}
+
+.right-hover .dp_item:nth-child(n+3) .dp-img img {
+  transform: translate(0px, 0px)  rotateX(0deg) rotateY(0deg)  scale(1) !important;
+
+}
